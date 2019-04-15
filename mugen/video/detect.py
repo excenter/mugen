@@ -36,7 +36,7 @@ def video_segment_has_cut(video_segment: VideoSegment) -> bool:
     -------
     True if a video segment has a cut between shots, False otherwise
     """
-    cuts, luminosities = detect_scenes(video_segment, progress_bar=False)
+    cuts, luminosities = detect_scenes(video_segment)
 
     return len(cuts) > 1
 
