@@ -101,7 +101,6 @@ class VideoWriter:
 
         video_clip.write_videofile(output_path, audio=audio,
                                    preset=self.preset, codec=self.codec, audio_codec=self.audio_codec,
-                                   audio_bitrate=audio_bitrate, ffmpeg_params=ffmpeg_params, **kwargs, verbose=verbose,
-                                   progress_bar=progress_bar)
+                                   audio_bitrate=audio_bitrate, ffmpeg_params=ffmpeg_params, **kwargs, verbose=verbose)
 
         return output_path
